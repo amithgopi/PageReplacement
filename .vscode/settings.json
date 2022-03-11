@@ -12,6 +12,7 @@
         "istream": "c",
         "streambuf": "c",
         "unordered_map": "c",
-        "string_view": "c"
+        "string_view": "c",
+        "math.h": "c"
     }
 }
