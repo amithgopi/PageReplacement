@@ -187,7 +187,7 @@ void createInputFile() {
     if (!filePtr) {
         filePtr = fopen(INPUT_FILENAME, "w");
         for(int i=0; i<INPUT_LENGTH; i++) {
-            fprintf(filePtr, "%d\n", rand() / (RAND_MAX + 1.0) * (NUMBER_OF_PAGES) );
+            fprintf(filePtr, "%d\n", (int)((rand() / (RAND_MAX + 1.0)) * (NUMBER_OF_PAGES)) );
         }
     }
     fclose(filePtr);
