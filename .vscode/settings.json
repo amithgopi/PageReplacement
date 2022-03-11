@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.tcc": "c",
+        "cstdio": "c",
+        "list": "c",
+        "deque": "c",
+        "string": "c",
+        "vector": "c",
+        "functional": "c",
+        "stdio.h": "c",
+        "fstream": "c",
+        "istream": "c",
+        "streambuf": "c",
+        "unordered_map": "c",
+        "string_view": "c"
+    }
+}
