@@ -92,19 +92,6 @@ struct Node* find(struct List *list, int page) {
 }
 
 /**
- * @brief Find a given page in the list and rmeove its corresponding entry
- * 
- * @param list Pointer to the list
- * @param page page number to search for
- * @return int value of the page beind removed, else return -1
- */
-int remove_page(struct List* list, int page) {
-    struct Node* n = find(list, page);
-    int val;
-    val = remove_element(list, n);
-}
-
-/**
  * @brief Remove the node given by its pointer from the list
  * 
  * @param list Pointer to the list
@@ -127,6 +114,19 @@ int remove_element(struct List* list, struct Node* n) {
         list->size--;
         return val;
     }
+}
+
+/**
+ * @brief Find a given page in the list and rmeove its corresponding entry
+ * 
+ * @param list Pointer to the list
+ * @param page page number to search for
+ * @return int value of the page beind removed, else return -1
+ */
+int remove_page(struct List* list, int page) {
+    struct Node* n = find(list, page);
+    int val;
+    val = remove_element(list, n);
 }
 
 /**

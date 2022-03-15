@@ -360,7 +360,7 @@ int runSecondChance(struct List* memory, struct List* recent, int page, int* ref
         }
         // Place new page at the front of the queue
         push_front(memory, page);
-        referenced[page] = 1;
+        // referenced[page] = 1;
     } else {
         // Page in memory, set pageFault to false and do nothing
         pageFault = 0;
